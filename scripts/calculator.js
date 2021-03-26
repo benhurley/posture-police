@@ -241,10 +241,20 @@ const measurementMap = [
 
 window.onload = () => {
     const heightSelector = document.getElementById('select-height');
+    const measurementList = document.getElementById('measurement-list');
 
+    // Append default measurements to html
+    const defaultMeasurements = measurementMap[0];
+    defaultMeasurements.map((defaultItem) => {
+        const defaultListItem = document.createElement('li');
+        defaultListItem.append(`${defaultItem.name}: `);
+        defaultListItem.append(defaultItem.value);
+        measurementList.append(defaultListItem);
+    });
+
+    // Watch for selections and append html
     heightSelector.addEventListener('change', function() {
         const measurements = measurementMap[this.value || 0];
-        const measurementList = document.getElementById('measurement-list');
         measurementList.innerHTML = "";
 
         measurements.map((item) => {
