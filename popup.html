@@ -2,8 +2,9 @@
 <html>
   <head>
     <title>Posture Police</title>
+	<script src="scripts/calculator.js"></script>
   </head>
-  <body style="border-style: ridge; border-width: 1px; text-align:center;">
+  <body style="border-style: ridge; border-width: 1px; text-align:center; min-width: 350px">
     <img style="padding-top: 10px" src="logo-full-size.png" />
     <div style="font-family:Tahoma; padding-left:10px; padding-right: 10px; padding-bottom: 25px;">
       <h1>Posture Police</h1>
@@ -16,5 +17,70 @@
       <p>Simply click above and move the tab to its own window. It will chime automatically you when you start slouching!</p>
       <p>Don't know how to sit at your desk properly? Learn <a href="https://www.work-fit.com/blog/how-to-sit-properly-at-your-desk" target="_blank">here</a>!</p>
     </div>
+	<div>
+		<hr />
+		<h2>Ergonomic Calculator</h2>
+		<p>Select your height:</p>
+		<select id="select-height">
+			<option value="0">
+				5'0
+			</option>
+			<option value="1">
+				5'1
+			</option>
+			<option value="2">
+				5'2
+			</option>
+			<option value="3">
+				5'3
+			</option>
+			<option value="4">
+				5'4
+			</option>
+			<option value="5">
+				5'5
+			</option>
+			<option value="6">
+				5'6
+			</option>
+			<option value="7">
+				5'7
+			</option>
+			<option value="8">
+				5'8
+			</option>
+			<option value="9">
+				5'9
+			</option>
+			<option value="10">
+				5'10
+			</option>
+			<option value="11">
+				5'11
+			</option>
+			<option value="12">
+				6'0
+			</option>
+			<option value="13">
+				6'1
+			</option>
+			<option value="14">
+				6'2
+			</option>
+			<option value="15">
+				6'3
+			</option>
+			<option value="16">
+				6'4
+			</option>
+		</select>
+		<ul id="measurement-list" style="list-style: none; padding: 0;">
+		</ul>
+
+		<img 
+			class="desk-height-image" 
+			src="desk-height.jpeg" 
+			style="width: 100%;" />
+	</div>
   </body>
 </html>
