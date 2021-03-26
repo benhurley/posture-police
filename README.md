@@ -1,7 +1,6 @@
 # ![spine logo](icon.png) Posture Police ![spine logo](icon.png)
-
+![screenshot](screenshot.png)<br>
 Chrome extension to help you monitor your posture. 
-
 # Get Started
 1. clone repo
 2. navigate to `chrome://extensions/`
